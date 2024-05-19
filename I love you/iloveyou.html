@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f3f3f3;
+            overflow: hidden;
+            font-family: "Cormorant", serif;
+        }
+
+        h1 {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transform: translateY(-50%);
+            font-size: 50px;
+            color: #a80522;
+            z-index: 10;
+        }
+
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #ff697b;
+            transform: rotate(45deg);
+            animation: float 5s infinite ease-in-out;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #ff697b;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: -10px;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(45deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-800px) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        .heart:nth-child(1) {
+            left: 10%;
+            animation-duration: 6s;
+            animation-delay: 0s;
+        }
+
+        .heart:nth-child(2) {
+            left: 20%;
+            animation-duration: 7s;
+            animation-delay: 2s;
+        }
+
+        .heart:nth-child(3) {
+            left: 30%;
+            animation-duration: 8s;
+            animation-delay: 4s;
+        }
+
+        .heart:nth-child(4) {
+            left: 40%;
+            animation-duration: 9s;
+            animation-delay: 1s;
+        }
+        .heart:nth-child(5) {
+            left: 80%;
+            animation-duration: 6s;
+            animation-delay: 0s;
+        }
+
+        .heart:nth-child(6) {
+            left: 60%;
+            animation-duration: 7s;
+            animation-delay: 2s;
+        }
+
+        .heart:nth-child(7) {
+            left: 70%;
+            animation-duration: 8s;
+            animation-delay: 4s;
+        }
+
+        .heart:nth-child(8) {
+            right: 90%;
+            animation-duration: 9s;
+            animation-delay: 1s;
+        }
+        .heart:nth-child(9) {
+            left: 90%;
+            animation-duration: 9s;
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <h1>TE AMO</h1>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+</body>
+</html>
